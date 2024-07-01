@@ -15,8 +15,6 @@ router.get('/me', isAuthenticated, userProfile);
 
 router.get('/users', getAllUsers);
 
-// Google authentication route
-// router.post('/google-login', googleLogin);
 router.post('/google-login', async (req, res) => {
     const { token } = req.body;
   
